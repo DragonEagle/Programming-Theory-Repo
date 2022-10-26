@@ -14,7 +14,10 @@ public class MenuUIHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            ScreenCapture.CaptureScreenshot("Screenshot.png");
+        }
     }
 
     public void StartGame()
