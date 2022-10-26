@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Mech : MonoBehaviour
+public abstract class Animal : MonoBehaviour
 {
     public float speed = 10.0f;
     public int attack = 10;
@@ -22,7 +22,7 @@ public abstract class Mech : MonoBehaviour
     // ABSTRACTION
     protected virtual void Move()
     {
-        transform.Rotate(transform.up,  speed * Time.deltaTime);
+        transform.Rotate(transform.up, speed * Time.deltaTime);
     }
     // Update is called once per frame
     void Update()
@@ -42,12 +42,12 @@ public abstract class Mech : MonoBehaviour
         {
             Die();
         }
-        Debug.Log(gameObject.name+": Shield: " +shield+" Health: "+ health);
+        Debug.Log(gameObject.name + ": Shield: " + shield + " Health: " + health);
     }
     protected abstract void Die();
     private void OnCollisionEnter(Collision collision)
     {
-        Mech other = collision.gameObject.GetComponent<Mech>();
+        Animal other = collision.gameObject.GetComponent<Animal>();
         if (other)
         {
             other.TakeDamage(attack);

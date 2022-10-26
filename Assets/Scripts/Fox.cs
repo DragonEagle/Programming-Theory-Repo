@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplodingMech : Mech
+public class Fox : Animal
 {
     // ENCAPSULATION
     [SerializeField]
@@ -19,6 +19,7 @@ public class ExplodingMech : Mech
         rabbit = GameObject.Find("Rabbit");
     }
 
+    // The fox chases
     // POLYMORPHISM
     protected override void Move()
     {
