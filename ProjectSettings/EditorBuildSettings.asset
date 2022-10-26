@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title Scene.unity
+    guid: bdc31eb85201cd74f9babfcc53545f9f
+  - enabled: 1
+    path: Assets/Scenes/FoxAndRabbit.unity
+    guid: 5597a6de482a44743bfe2ba9dd541a67
   m_configObjects: {}
