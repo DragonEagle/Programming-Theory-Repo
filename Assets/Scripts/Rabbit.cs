@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Rabbit : Animal
 {
+    // ENCAPSULATION
+
     private bool direction;
     private Rigidbody rbMech;
     private GameObject fox;
